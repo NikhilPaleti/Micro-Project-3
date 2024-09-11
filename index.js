@@ -25,16 +25,12 @@ document.getElementById("display").innerHTML = 0;
 
 for (let i=0; i<15; i++){
     btn[i].addEventListener('click', function() {
-        // console.log(btn[i].id, "was clicked");
-        // equation.push(btn[i].id);
         equation+=btn[i].id;
         document.getElementById("display").innerHTML = equation;
         console.log(equation);
     });
 }
 btn[15].addEventListener('click', function() {
-    // console.log(btn[15].id, "was clicked");
-    // equation.pop();
     equation=equation.slice(0,-1);
     if (equation === ""){
         document.getElementById("display").innerHTML = 0;
@@ -42,21 +38,15 @@ btn[15].addEventListener('click', function() {
     else{
         document.getElementById("display").innerHTML = equation;
     }
-    console.log(equation);
+    // console.log(equation);
 });
 btn[16].addEventListener('click', function() {
     equation = "";
     document.getElementById("display").innerHTML = 0;
 });
-btn[17].addEventListener('click', function() {
-    // console.log(btn[17].id, "was clicked");
-    // var str=""
-    // for (let i=0; i<equation.length; i++){
-    //     str+=equation[i];
-    // }
-    
+btn[17].addEventListener('click', function() {    
     let result = eval(equation);
-    console.log(result);
+    // console.log(result);
     document.getElementById("display").innerHTML = result;
     equation = "";
 
