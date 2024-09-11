@@ -1,0 +1,104 @@
+
+@font-face {
+    font-family: "Custom_7Seg";
+    src: url("assets/Orbitron-VariableFont_wght.ttf") format("truetype");
+}
+
+html{
+    padding: 0; 
+    margin: 0;
+
+    background-color: #3B4664;    
+}
+body{
+    /* padding: 0;  */
+    /* margin: 0; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #3B4664;
+}
+
+#main2{
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+    /* margin: auto; */
+    /* margin-top: 15vh; */
+    
+    /* background-color: #3B4664; */
+    background-color: #252D44;
+    border-radius: 1rem;
+
+}
+#main{
+    width: 40vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* margin: auto; */
+    /* margin-top: 15vh; */
+    
+    /* background-color: #3B4664; */
+    /* background-color: #252D44; */
+}
+
+.row{
+    width: 35vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;    
+    justify-content: space-between;
+}
+#main .row {
+    width: 40vw;
+}
+#display{
+    width: 40vw;
+    padding: 2rem;
+    padding-right: 2rem;
+
+    background-color: #181F32;
+    border-radius: 1rem;
+
+    color: white;
+    text-align: end;
+    font-size: 3rem;
+    font-family: 'Custom_7Seg';
+}
+
+.numbutton, .opbutton{
+    width: 15%; 
+    padding: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    
+    background-color: #EAE3DB;   
+    border-radius: 1rem; 
+
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Custom_7Seg';
+}
+.opbutton{
+
+    background-color: #647299;
+
+    color: white;
+}
+#EQUAL{
+    background-color: #D13F30;
+
+    color: black;
+}
+#EQUAL, #RESET{
+    width: 41%;
+}
